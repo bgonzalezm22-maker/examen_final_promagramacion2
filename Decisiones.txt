@@ -1,0 +1,19 @@
+==================================================
+DOCUMENTO DE DECISIONES DE DISEÑO Y DESARROLLO
+==================================================
+
+(a) Comprensión del problema y modelo de datos:
+- Se implementó una plataforma de renta virtual de películas basada en una interfaz interactiva de cartelera unificada (feed en vivo), prescindiendo de pestañas tradicionales de navegación.
+- Estructura de tablas en Supabase/PostgreSQL:
+  1. perfiles_usuario: id, nombre_completo, edad, tarjeta_credito, fotografia_url, rol.
+  2. catalogo_peliculas: id, titulo, genero, poster_url, estado_disponible.
+  3. historial_rentas: id, usuario_id, pelicula_id, fecha_inicio, fecha_fin.
+
+(b) Delegación a la Inteligencia Artificial:
+- Se solicitó a la IA la lógica de conexión asíncrona entre Supabase Client y React Native para actualizar los estados de posesión de películas en tiempo real.
+- Motivo: Optimizar la experiencia de usuario reflejando el cambio de estado de la película sin recargar la pantalla.
+
+(c) Corrección de errores cometidos por la IA:
+- La IA intentó renderizar los números completos de tarjeta de crédito dentro de la bitácora administrativa de rentas.
+- Error/Falla: Esto violaba la regla de seguridad sobre la no filtración de datos financieros sensibles.
+- Solución: Se corrigió la consulta y el componente para omitir este campo en los reportes y almacenar solo la versión enmascarada en el perfil del cliente.
