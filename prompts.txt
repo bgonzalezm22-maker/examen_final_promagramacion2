@@ -1,0 +1,12 @@
+==================================================
+REGISTRO DE PROMPTS UTILIZADOS
+==================================================
+
+Prompt 1:
+"Escribe un componente en React Native donde el estado de 'película rentada' se muestre en la misma tarjeta del catálogo con un badge dinámico en lugar de usar un menú separado de rentas."
+
+Prompt 2:
+"¿Cómo relacionar la tabla de historial_rentas con perfiles_usuario y catalogo_peliculas en Supabase para obtener el nombre del usuario y el título en una sola consulta?"
+
+Prompt 3:
+"Genera la estructura de un modal de perfil en React Native que muestre la foto, el nombre, la edad y el número de tarjeta enmascarado."
